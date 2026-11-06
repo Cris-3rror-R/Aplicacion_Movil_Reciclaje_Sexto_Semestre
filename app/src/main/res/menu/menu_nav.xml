@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nav_home"
+          android:icon="@drawable/casa"
+          android:title="@string/home" />
+
+    <item android:id="@+id/nav_save"
+        android:icon="@drawable/guardarr"
+        android:title="Guardar" />
+
+    <item android:id="@+id/nav_cancel"
+        android:icon="@drawable/cancel_24"
+        android:title="Cancelar" />
+
+    <item android:id="@+id/nav_returned"
+        android:icon="@drawable/retorn"
+        android:title="Regresar" />
+
+</menu>

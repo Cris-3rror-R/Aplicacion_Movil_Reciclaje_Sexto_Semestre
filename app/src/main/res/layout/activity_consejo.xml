@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MD_Theme_Primary"
+    android:orientation="vertical"
+    tools:context=".CentroActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/recuardo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Consejos y noticias"
+                android:textAlignment="center"
+                android:textColor="@color/MD_Theme_On_Primary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/recuadro2"
+        android:paddingBottom="20dp"
+        android:fillViewport="true"
+        android:backgroundTint="@color/MD_Theme_On_PrimaryContainer"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardConsejo"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consejo"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No laves los envases de yogur con detergente, solo dales un enjuague rápido con el agua que te sobre de lavar los platos o límpialos con una servilleta usada."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardConsejo1"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consejo"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="El aceite de cocina caliente, espera a que se enfríe, usa un embudo y guárdalo en una botella de plástico. Cuando esté llena, llévala a un centro de acopio."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNoticia"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noticia"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Separación obligatoria en CDMX: Desde el 1 de enero de 2026, es obligatorio separar los residuos en tres categorías. El camión tiene la instrucción de no llevarse la basura si no está clasificada."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardConsejo2"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consejo"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Para los envases de Tetra Pak, levanta las esquinas, aplástalos y vuelve a cerrarlos. Ocupan 70% menos espacio en el camión."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardConsejo3"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consejo"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Si tienes un jardín pequeño, los residuos organicos pueden convertirse en tierra fértil en solo 3 meses."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNoticia1"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noticia"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prohibición de microplásticos: Ya es oficial la veda total de microplásticos añadidos intencionalmente en productos de limpieza y cosméticos en todo Mexico."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNoticia1"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noticia"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="25% material reciclado: Marcas globales están lanzando colecciones fabricadas con un 25% de contenido reciclado posconsumo obligatorio por nuevas normativas de 2026."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNoticia3"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noticia"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Veda pesquera y plástica: En China y regiones costeras de México, se han implementado vedas ecológicas para limpiar el plástico del océano y recuperar los recursos pesqueros."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardConsejo4"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MD_Theme_Background"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consejo"
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nunca tires las baterias al bote gris. Las pilas sueltan metales pesados. Busca las columnas de acopio en las calles."
+                        android:textColor="@color/MD_Theme_PrimaryContainer"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegresarC"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:onClick="abrirMenu"
+            android:text="Regresar"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/MD_Theme_PrimaryContainer"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

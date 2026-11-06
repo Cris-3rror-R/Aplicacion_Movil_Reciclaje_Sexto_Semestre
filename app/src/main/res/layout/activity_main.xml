@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MD_Theme_Background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_ppal"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:background="@color/MD_Theme_OnSurface"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/title_ppal"
+            app:srcCompat="@drawable/iconte"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/intro_ppal"
+            android:textAlignment="center"
+            android:textColor="@color/MD_Theme_On_PrimaryContainer"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIniciar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/reciclar"
+            android:textSize="20sp"
+            android:textColor="@color/MD_Theme_On_Primary"
+            app:backgroundTint="@color/MD_Theme_Surface"
+            android:onClick="abrirLogin"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

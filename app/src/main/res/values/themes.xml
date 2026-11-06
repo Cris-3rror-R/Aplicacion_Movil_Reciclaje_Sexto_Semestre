@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ejemplo_3_Colores_P" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/MD_Theme_Primary</item>
+        <item name="colorOnPrimary">@color/MD_Theme_On_Primary</item>
+        <item name="colorPrimaryContainer">@color/MD_Theme_PrimaryContainer</item>
+        <item name="colorOnContainer">@color/MD_Theme_On_PrimaryContainer</item>
+        <item name="colorSecondary">@color/MD_Theme_Secundary</item>
+        <item name="colorOnSecondary">@color/MD_Theme_On_Secundary</item>
+        <item name="android:windowBackground">@color/MD_Theme_Background</item>
+        <item name="colorOnBackground">@color/MD_Theme_OnBackground</item>
+        <item name="colorSurface">@color/MD_Theme_Surface</item>
+        <item name="colorOnSurface">@color/MD_Theme_OnSurface</item>
+        <item name="colorError">@color/MD_Theme_Error</item>
+        <item name="colorOnError">@color/MD_Theme_OnError</item>
+    </style>
+
+    <style name="CircularImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedCorner8dp">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
+    <style name="Theme.Ejemplo_3_Colores_P" parent="Base.Theme.Ejemplo_3_Colores_P" />
+</resources>

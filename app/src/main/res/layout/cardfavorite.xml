@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom = "12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingVertical="8dp">
+
+
+            <ImageView
+                android:id="@+id/favoriteIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/favorites"
+                tools:srcCompat="@drawable/favorito" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tittleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="@string/favorites" />
+
+            <ImageView
+                android:id="@+id/arrowIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/flechaicon"
+                android:rotation="0"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id ="@+id/expandableContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <CheckBox
+                android:id="@+id/boletinCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked ="false"
+                android:text="@string/boletin" />
+
+            <CheckBox
+                android:id="@+id/notifyCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nofify" />
+
+            <CheckBox
+                android:id="@+id/personalCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

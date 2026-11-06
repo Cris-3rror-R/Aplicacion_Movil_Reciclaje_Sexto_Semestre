@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MD_Theme_PrimaryContainer"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".MenuActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="172dp"
+                android:layout_height="match_parent"
+                android:text="@string/title_ppal"
+                android:textColor="@color/MD_Theme_On_Primary"
+                android:textSize="38sp"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="21dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/title_ppal"
+                app:srcCompat="@drawable/recicla4" />
+
+            <Space
+                android:layout_width="21dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="775dp"
+            android:background="@drawable/recuadro">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardPerfil"
+                    style="@style/Widget.Material3.CardView.Elevated"
+                    android:layout_width="181dp"
+                    android:layout_height="181dp"
+                    android:layout_margin="8dp"
+                    android:onClick="abrirPerfil"
+
+                    app:cardBackgroundColor="@color/MD_Theme_On_Primary">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/MD_Theme_Background"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <ImageView
+                            android:layout_width="87dp"
+                            android:layout_height="99dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/perfilUser"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/profile" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/perfilUser"
+                            android:textColor="@color/MD_Theme_PrimaryContainer"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2.5dp"
+                    android:background="@color/MD_Theme_On_Primary" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardIdResiduos"
+                        style="@style/Widget.Material3.CardView.Filled"
+                        android:layout_width="match_parent"
+                        android:layout_height="181dp"
+                        android:layout_weight="1"
+                        android:onClick="abrirIdentificar"
+                        app:cardBackgroundColor="#33658A">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#33658A"
+                            android:orientation="vertical">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="84dp"
+                                android:layout_gravity="center_horizontal"
+                                android:contentDescription="@string/identificarResiduos"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/recicla3" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/identificarResiduos"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/MD_Theme_Background"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardCentroRecic"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="match_parent"
+                        android:layout_height="181dp"
+                        android:layout_weight="1"
+                        android:onClick="abrirCentro"
+                        app:cardBackgroundColor="#2F4858">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#2F4858"
+                            android:orientation="vertical">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="99dp"
+                                android:layout_gravity="center_horizontal"
+                                android:contentDescription="@string/centrosReciclaje"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/recicla2" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/centrosReciclaje"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Background"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardIdGuiaReci"
+                        style="@style/Widget.Material3.CardView.Filled"
+                        android:layout_width="match_parent"
+                        android:layout_height="181dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#1E91D6"
+                        android:onClick="abrirGuia"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#1E91D6"
+                            android:orientation="vertical">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="84dp"
+                                android:layout_gravity="center_horizontal"
+                                android:contentDescription="@string/guiaReciclaje"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/recicla1" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/guiaReciclaje"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/MD_Theme_Background"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardClasi"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="match_parent"
+                        android:layout_height="181dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@android:color/holo_blue_dark"
+                        android:onClick="abrirConsejo"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/holo_blue_dark"
+                            android:orientation="vertical">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="99dp"
+                                android:layout_gravity="center_horizontal"
+                                android:contentDescription="@string/noticiasConsejos"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/recicla5" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/noticiasConsejos"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Background"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/textCerrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cerrarSesion"
+                    android:paddingEnd="10sp"
+                    android:text="Cerrar Sesion"
+                    android:textAlignment="center"
+                    android:textColor="@color/MD_Theme_PrimaryContainer"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

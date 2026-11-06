@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MD_Theme_Primary"
+    android:fillViewport="true"
+    tools:context=".CentroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@drawable/recuardo3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Guia de reciclaje"
+                    android:textAlignment="center"
+                    android:textColor="@color/MD_Theme_On_Primary"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recuadro"
+            android:paddingBottom="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guia para el uso correcto de los contenedores"
+                    android:textAlignment="center"
+                    android:textColor="@color/MD_Theme_On_PrimaryContainer"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNaraja"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/MD_Theme_On_PrimaryContainer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/MD_Theme_On_PrimaryContainer"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/contenaraja" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Contenedor Naraja"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/MD_Theme_On_PrimaryContainer"
+                                android:text="Residuos organicos"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardAmarillo"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/MD_Theme_On_PrimaryContainer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/MD_Theme_On_PrimaryContainer"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/conteamarillo" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Contenedor Amarillo"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/MD_Theme_On_PrimaryContainer"
+                                android:text="Papel, carton y vidrio"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardAzul"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/MD_Theme_On_PrimaryContainer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/MD_Theme_On_PrimaryContainer"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/conteazul" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Contenedor Azul"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/MD_Theme_On_PrimaryContainer"
+                                android:text="Plastico de todo tipo"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardVerde"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/MD_Theme_On_PrimaryContainer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/MD_Theme_On_PrimaryContainer"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/conteverde" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Contenedor Verde"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/MD_Theme_On_PrimaryContainer"
+                                android:text="Vidrio"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardRoja"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/MD_Theme_On_PrimaryContainer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/MD_Theme_On_PrimaryContainer"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/conterojo" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Contenedor Rojo"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/MD_Theme_On_PrimaryContainer"
+                                android:text="Residuos toxicos, delicados y sanitarios"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardGris"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/MD_Theme_On_PrimaryContainer">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/MD_Theme_On_PrimaryContainer"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center_horizontal"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/contegris" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Contenedor Gris"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/MD_Theme_On_PrimaryContainer"
+                                android:text="Plastico, metal, ceramica y juguetes"
+                                android:textAlignment="center"
+                                android:textColor="@color/MD_Theme_Primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegresarC"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:onClick="abrirMenu"
+                android:text="Regresar"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/MD_Theme_PrimaryContainer"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
